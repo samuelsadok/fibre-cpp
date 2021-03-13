@@ -33,7 +33,9 @@ RUN /get_dependencies.sh download_deb_pkg libusb-dev-amd64 "http://mirrors.kerne
     /get_dependencies.sh download_deb_pkg libusb-dev-i386 "http://mirrors.kernel.org/ubuntu/pool/main/libu/libusb-1.0/libusb-1.0-0-dev_1.0.23-2build1_i386.deb" && \
     /get_dependencies.sh download_deb_pkg libusb-armhf "http://mirrordirector.raspbian.org/raspbian/pool/main/libu/libusb-1.0/libusb-1.0-0_1.0.24-2_armhf.deb" && \
     /get_dependencies.sh download_deb_pkg libusb-dev-armhf "http://mirrordirector.raspbian.org/raspbian/pool/main/libu/libusb-1.0/libusb-1.0-0-dev_1.0.24-2_armhf.deb" && \
-    /get_dependencies.sh download_deb_pkg libstdc++-linux-armhf "http://mirrors.kernel.org/ubuntu/pool/universe/g/gcc-10-cross/libstdc++-10-dev-armhf-cross_10-20200411-0ubuntu1cross1_all.deb"
+    /get_dependencies.sh download_deb_pkg libstdc++-linux-armhf "http://mirrors.kernel.org/ubuntu/pool/universe/g/gcc-10-cross/libstdc++-10-dev-armhf-cross_10-20200411-0ubuntu1cross1_all.deb" && \
+    /get_dependencies.sh download_deb_pkg libusb-aarch64 "http://deb.debian.org/debian/pool/main/libu/libusb-1.0/libusb-1.0-0-dev_1.0.22-2_arm64.deb"
+
 
 
 RUN /get_dependencies.sh patch_macos_sdk && \

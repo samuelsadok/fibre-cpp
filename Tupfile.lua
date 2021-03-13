@@ -50,6 +50,10 @@ elseif string.find(machine, "arm.*%-linux%-.*") then
     outname = 'libfibre-linux-armhf.so'
     LDFLAGS += '-lpthread -Wl,--version-script=libfibre.version -Wl,--gc-sections'
     STRIP = false
+elseif string.find(machine, "aarch64.*%-linux%-.*") then
+    outname = 'libfibre-linux-aarch64.so'
+    LDFLAGS += '-lpthread -Wl,--version-script=libfibre.version -Wl,--gc-sections'
+    STRIP = false
 elseif string.find(machine, "x86_64.*-mingw.*") then
     outname = 'libfibre-windows-amd64.dll'
     LDFLAGS += '-lpthread -Wl,--version-script=libfibre.version'
