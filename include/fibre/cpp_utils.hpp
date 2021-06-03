@@ -83,6 +83,7 @@ public:
 #include <functional>
 #include <unordered_map>
 //#include <ostream>
+#include <stdlib.h>
 
 /* Backport features from C++14 and C++17 ------------------------------------*/
 
